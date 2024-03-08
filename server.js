@@ -7,6 +7,10 @@ const userRouter = require('./routes/users');
 
 const port = 3001;
 
+app.get('/', (req, res) => {
+  res.send('Hello World');
+});
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());    // To parse the incoming requests with JSON payloads
 app.use('/api/users', userRouter);
