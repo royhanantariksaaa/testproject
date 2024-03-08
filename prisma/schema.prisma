@@ -18,6 +18,16 @@ model User {
   email     String   @unique
   name      String?
   password  String
+  unit      Units?   
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Units {
+  id       Int      @id @default(autoincrement())
+  name     String
+  leader   User   @relation(fields: [leaderId], references: [id])
+  leaderId Int   @unique 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
