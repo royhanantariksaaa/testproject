@@ -1,0 +1,9 @@
+stages:
+  - deploy
+
+deploy_to_server:
+  stage: deploy
+  script:
+    - ssh user@server 'cd /projects/testproject && git pull origin master && ./deploy.sh'
+  only:
+    - master
