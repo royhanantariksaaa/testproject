@@ -11,6 +11,9 @@ app.get('/', (req, res) => {
   res.send('Royhan was here, Selamat Bulan Puasa');
 });
 
+app.get('/apa', (req, res) => {
+  res.send('Gak papa');
+});
 //made it here, 13:04
 
 app.use(express.urlencoded({ extended: true }));
