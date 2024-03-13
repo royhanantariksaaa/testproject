@@ -8,7 +8,7 @@ const userRouter = require('./routes/users');
 const port = 3001;
 
 app.get('/', (req, res) => {
-  res.send('Hello World, Selamat Bulan Puasa');
+  res.send('Royhan was here, Selamat Bulan Puasa');
 });
 
 //made it here, 13:04
