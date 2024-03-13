@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/apa', (req, res) => {
-  res.send('Gak papa');
+  res.send('Gak papa bukan masalah');
 });
 //made it here, 13:04
 
