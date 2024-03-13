@@ -4,6 +4,6 @@ stages:
 deploy_to_server:
   stage: deploy
   script:
-    - ssh -oStrictHostKeyChecking=no -i azureuser@20.6.73.92 'cd /projects/testproject && git pull origin master && ./deploy.sh'
+    - ssh -oStrictHostKeyChecking=no azureuser@20.6.73.92 'cd /projects/testproject && git pull origin master && ./deploy.sh'
   only:
     - master
